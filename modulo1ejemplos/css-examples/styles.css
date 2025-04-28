@@ -1,0 +1,56 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+
+  /* Contenedor fluido */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2vw; /* Espaciado relativo */
+  }
+
+  /* Grilla de tarjetas */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(1rem, 2vw, 1.5rem); /* Espaciado fluido */
+  }
+
+  /* 1. Personalizar el tema */
+  /* Estilo de cada tarjeta */
+  .card {
+    background: #b2d9f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.2rem); /* Tipografía responsiva */
+  }
+
+  .card img {
+    max-width: 100%; /* Imagen fluida */
+    height: auto;
+    border-radius: 4px;
+  }
+
+  /*2. añadir un nuevo ejemplo Grid*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.grid-item {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
